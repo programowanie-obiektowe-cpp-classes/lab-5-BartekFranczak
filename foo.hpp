@@ -11,7 +11,7 @@ std::vector< char > foo(std::list< Human >& people)
 
     for(Human h : people){
         h.birthday();
-        if(h.isMonster()){ v.emplace(v.begin(),'n');}
+        if(h.isMonster()){ v.emplace(v.begin(),'y');}
         else {v.emplace(v.begin(),'y');}
 
     }
