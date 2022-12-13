@@ -7,6 +7,13 @@
 
 std::vector< char > foo(std::list< Human >& people)
 {
-    // Twoja implementacja tutaj
+    std::vector< char > v;
+
+    for(Human h : people){
+        h.birthday();
+        if(h.isMonster()){ v.emplace(v.begin(),'n');}
+        else {v.emplace(v.begin(),'y');}
+
+    }
     return {};
 }
