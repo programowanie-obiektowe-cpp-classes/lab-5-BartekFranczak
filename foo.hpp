@@ -15,5 +15,5 @@ std::vector< char > foo(std::list< Human >& people)
         else {v.emplace(v.begin(),'y');}
 
     }
-    return {};
+    return v;
 }
